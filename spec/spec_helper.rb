@@ -1,13 +1,11 @@
 require 'coveralls'
 ENV['RACK_ENV'] = 'test'
 
-
 require 'simplecov'
 require './app/server'
 require 'capybara/rspec'
 require 'database_cleaner'
 require 'byebug'
-
 
 DataMapper.auto_migrate!
 
@@ -19,10 +17,7 @@ SimpleCov.formatters = [
 ]
 Coveralls.wear!
 
-
-
 Capybara.app = Sinatra::Application.new
-
 
 RSpec.configure do |config|
 
@@ -38,7 +33,5 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
-
-
 
 end

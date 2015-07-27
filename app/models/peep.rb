@@ -1,6 +1,7 @@
 require 'dm-timestamps'
 
 class Peep
+
   include DataMapper::Resource
 
   property :id, Serial
@@ -8,4 +9,5 @@ class Peep
   property :created_at, Time
 
   belongs_to :user
+
 end

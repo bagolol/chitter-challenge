@@ -1,8 +1,6 @@
 require_relative '../helpers/session'
 include SessionHelpers
 
-
-
 feature 'users signs in' do
 
   before(:each) do
@@ -13,9 +11,9 @@ feature 'users signs in' do
   end
 
   scenario 'with correct credential' do
-  visit('/')
-  expect(page).not_to have_content('Welcome, john78')
-  sign_in('test@test.com', 'test')
-  expect(page).to have_content('Welcome, john78')
+    visit('/')
+    expect(page).not_to have_content('Welcome, john78')
+    sign_in('test@test.com', 'test')
+    expect(page).to have_content('Welcome, john78')
   end
 end

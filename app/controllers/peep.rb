@@ -1,7 +1,6 @@
 require_relative '../helpers/application'
 include CurrentUser
 
-
 post '/peeps' do
   if current_user
     text = params[:peep]
