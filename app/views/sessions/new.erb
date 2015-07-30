@@ -1,8 +1,14 @@
-Please sign in.
+<h2>Please sign in</h2>
 
-<form method='post' action='/sessions'>
+<div id='peeps-container'>
 
-  Email: <input type='text' name='email'>
-  Password: <input type='password' name='password'>
-  <input type='submit' value='Sign in'>
-</form>
+  <form method='post' action='/sessions' class='peep_form' align="center">
+    <label>
+      e-mail: <input type='text' name='email' size='100'/>
+    </label>
+    <label>
+      password: <input type='password' name='password' size='100'/>
+    </label>
+    <input type='submit' value='Sign in' class='button'>
+  </form>
+</div>

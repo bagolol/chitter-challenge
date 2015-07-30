@@ -1,13 +1,15 @@
-<li class='peep'>
+<ul class='peep'>
   <div class="description">
     <%= peep.content %>
+    <div class="peep_info">
+      <span class="time">
+        <% time = peep.created_at.strftime("%H:%M, %d/%m/%Y") %>
+        added at <%= time %>
+      </span>
+      <span class="username">
+        <% username = peep.user.username %>
+        <a><%= username %></a>
+      </span>
+    </div>
   </div>
-    <span class='time'>
-      <% time = peep.created_at.strftime("%H:%M, %d/%m/%Y") %>
-      added at <%= time %>
-    </span>
-    <span class='username' style="color:#587DCC">
-      <% username = peep.user.username %>
-      <a><%= username %></a>
-    </span>
-</li>
+</ul>
