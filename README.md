@@ -76,7 +76,7 @@ Next steps:
 Screenshot:
 -------
 
-![homepage](public/img/homepage.jpg)
+![homepage](/public/img/homepage.jpg)
 
 
 Links:
