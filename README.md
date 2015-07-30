@@ -66,8 +66,8 @@ I want to see the time at which it was made
 Next steps:
 -------
 
-- add password recovery
-- add reply to tweet
+- Add password recovery
+- Add reply to tweet
 - Additional tests to ensure no blank entries and to limit the peep length
 - Deploy to Heroku
 
