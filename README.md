@@ -1,5 +1,3 @@
-[![Coverage Status](https://coveralls.io/repos/bagolol/chitter/badge.svg?branch=master&service=github)](https://coveralls.io/github/bagolol/chitter-challenge?branch=master)  [![Code Climate](https://codeclimate.com/github/bagolol/chitter-challenge/badges/gpa.svg)](https://codeclimate.com/github/bagolol/chitter-challenge)
-
 
 Chitter
 =================
