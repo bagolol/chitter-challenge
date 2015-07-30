@@ -4,7 +4,6 @@ require 'rack-flash'
 require 'sinatra/partial'
 
 use Rack::Flash, accessorize: [:notice, :error]
-use Rack::MethodOverride
 
 enable :sessions
 set :session_secret, '1wejka'
@@ -20,5 +19,7 @@ require_relative 'controllers/peep'
 require_relative 'controllers/sessions'
 require_relative 'helpers/application'
 
+use Rack::MethodOverride
+set :public_folder, proc { File.join(root, '..', 'public') }
 
 
